@@ -637,12 +637,12 @@
     </header>
 
     <nav class="nav-tabs" role="navigation" aria-label="Navegação principal">
-        <button class="nav-tab active" data-section="introducao" aria-label="Ir para Introdução">Introdução</button>
-        <button class="nav-tab" data-section="historia" aria-label="Ir para História">História</button>
-        <button class="nav-tab" data-section="principios" aria-label="Ir para Princípios">Princípios</button>
-        <button class="nav-tab" data-section="constituicao" aria-label="Ir para Constituição BR">Constituição BR</button>
-        <button class="nav-tab" data-section="aplicacao" aria-label="Ir para Aplicação">Aplicação</button>
-        <button class="nav-tab" data-section="desafios" aria-label="Ir para Desafios">Desafios</button>
+        <button class="nav-tab active role="tab" aria-selected="true" aria-controls="introducao"" data-section="introducao" aria-label="Ir para Introdução">Introdução</button>
+        <button class="nav-tab" role="tab" aria-selected="false" aria-controls="historia" data-section="historia" aria-label="Ir para História">História</button>
+        <button class="nav-tab" role="tab" aria-selected="false" aria-controls="principios" data-section="principios" aria-label="Ir para Princípios">Princípios</button>
+        <button class="nav-tab" role="tab" aria-selected="false" aria-controls="constituicao" data-section="constituicao" aria-label="Ir para Constituição BR">Constituição BR</button>
+        <button class="nav-tab" role="tab" aria-selected="false" aria-controls="aplicacao" data-section="aplicacao" aria-label="Ir para Aplicação">Aplicação</button>
+        <button class="nav-tab" role="tab" aria-selected="false" aria-controls="desafios" data-section="desafios" aria-label="Ir para Desafios">Desafios</button>
     </nav>
 
     <main class="container" role="main">
@@ -690,7 +690,7 @@
             </div>
         </section>
 
-        <section id="historia" class="section" style="display: none;" aria-labelledby="historia-title">
+        <section id="historia" class="section" hidden aria-labelledby="historia-title">
             <h2 id="historia-title"><i class="fas fa-hourglass-start" aria-hidden="true"></i> História do Constitucionalismo</h2>
             
             <p>O constitucionalismo evoluiu através de séculos, desde as primeiras limitações ao poder monárquico até as constituições democráticas contemporâneas.</p>
@@ -764,7 +764,7 @@
             </div>
         </section>
 
-        <section id="principios" class="section" style="display: none;" aria-labelledby="principios-title">
+        <section id="principios" class="section" hidden aria-labelledby="principios-title">
             <h2 id="principios-title"><i class="fas fa-compass" aria-hidden="true"></i> Princípios Constitucionais</h2>
             
             <p>Os princípios constitucionais formam a base ideológica e jurídica do sistema constitucional, orientando a interpretação e aplicação de todas as normas.</p>
@@ -837,7 +837,7 @@
             </div>
         </section>
 
-        <section id="constituicao" class="section" style="display: none;" aria-labelledby="const-title">
+        <section id="constituicao" class="section" hidden aria-labelledby="const-title">
             <h2 id="const-title"><i class="fas fa-scroll" aria-hidden="true"></i> Constituição Federal do Brasil (1988)</h2>
             
             <p>A Constituição de 1988, promulgada após 21 anos de regime militar, é considerada a "Constituição Cidadã" por seu foco em direitos e liberdades democráticas.</p>
@@ -899,7 +899,7 @@
             </div>
         </section>
 
-        <section id="aplicacao" class="section" style="display: none;" aria-labelledby="aplic-title">
+        <section id="aplicacao" class="section" hidden aria-labelledby="aplic-title">
             <h2 id="aplic-title"><i class="fas fa-gavel" aria-hidden="true"></i> Aplicação Prática do Constitucionalismo</h2>
             
             <p>A aplicação do constitucionalismo envolve a efetividade dos direitos constitucionais, o controle de constitucionalidade das leis e a adequação das políticas públicas aos princípios constitucionais.</p>
@@ -959,7 +959,7 @@
             </div>
         </section>
 
-        <section id="desafios" class="section" style="display: none;" aria-labelledby="desafios-title">
+        <section id="desafios" class="section" hidden aria-labelledby="desafios-title">
             <h2 id="desafios-title"><i class="fas fa-exclamation-circle" aria-hidden="true"></i> Desafios Contemporâneos</h2>
             
             <p>O constitucionalismo enfrenta desafios modernos relacionados à globalização, transformações tecnológicas, crise de valores democráticos e efetividade de direitos.</p>
@@ -1043,11 +1043,15 @@
                 const sectionId = e.currentTarget.dataset.section;
                 
                 this.tabs.forEach(t => t.classList.remove('active'));
+                            t.setAttribute('aria-selected', 'false');
                 this.sections.forEach(s => s.style.display = 'none');
+                            s.hidden = true;
                 
                 e.currentTarget.classList.add('active');
+                        e.currentTarget.setAttribute('aria-selected', 'true');
                 const targetSection = document.getElementById(sectionId);
                 targetSection.style.display = 'block';
+                        targetSection.hidden = false;
                 
                 targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 
