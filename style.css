@@ -216,3 +216,32 @@ footer p { color: #666; font-size: 0.85rem; }
     .timeline-original { padding-left: 20px; margin-left: 10px; }
     .marker { width: 30px; height: 30px; left: -46px; font-size: 0.7rem; }
 }
+@media (max-width: 768px) {
+    /* Esconde menu desktop */
+    .nav-links { display: none; }
+
+    /* AJUSTE DO HERO PARA O BADGE APARECER */
+    .hero {
+        /* Remove o alinhamento central vertical que escondia o badge */
+        align-items: flex-start; 
+        
+        /* Empurra o conteúdo para baixo da Barra de Navegação */
+        padding-top: 140px; 
+        
+        /* Altura flexível para não cortar conteúdo */
+        height: auto;
+        min-height: 85vh; 
+    }
+
+    .hero-content {
+        padding-bottom: 60px; /* Espaço extra embaixo */
+    }
+
+    .hero h1 { font-size: 2.2rem; margin-top: 15px; }
+
+    /* Ajustes gerais de layout mobile */
+    .timeline-original { margin-left: 5px; padding-left: 25px; }
+    .grid-lessons { grid-template-columns: 1fr; }
+    .glass-card, .lesson-card { padding: 25px; }
+    .marker { left: -46px; }
+}
