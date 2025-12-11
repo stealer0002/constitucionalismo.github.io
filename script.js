@@ -65,31 +65,31 @@ const CourseRepository = {
     ],
 
     getTimeline: () => [
-        { id: 1, title: "Aula 1", content: "Teoria Geral dos Direitos Fundamentais e Estrutura Normativa de Defesa." },
-        { id: 2, title: "Aula 2", content: "A Eficácia dos Direitos Individuais e o Direito à Vida." },
-        { id: 3, title: "Aula 3", content: "Liberdades do Pensamento e a Vedação à Tortura." },
-        { id: 4, title: "Aula 4", content: "Privacidade, Inviolabilidade e Direitos de Associação." },
-        { id: 5, title: "Aula 5", content: "Garantias Processuais e Judiciais." },
-        { id: 6, title: "Aula 6", content: "Nacionalidade e Tratados Internacionais." },
-        { id: 7, title: "Aula 7", content: "Direitos Políticos e Inelegibilidades." },
-        { id: 8, title: "Aula 8", content: "Organização Político-Administrativa e Federalismo." },
-        { id: "M1", title: "Aula 9: AVALIAÇÃO M1", content: "Revisão e avaliação aprofundada dos tópicos das aulas 1 a 8.", type: "highlight" },
-        { id: 10, title: "Aula 10", content: "Defesa do Estado e das Instituições Democráticas." },
-        { id: 11, title: "Aula 11", content: "Organização dos Poderes e Funções Essenciais." },
-        { id: 12, title: "Aula 12", content: "Processo Legislativo e Medidas Provisórias." },
-        { id: 13, title: "Aula 13", content: "Tutela das Liberdades: Habeas Corpus e Habeas Data." },
-        { id: 14, title: "Aula 14", content: "Mandado de Segurança (MS)." },
-        { id: 15, title: "Aula 15", content: "Mandado de Injunção e Ação Popular." },
-        { id: 16, title: "Aula 16", content: "Controle de Constitucionalidade: Conceitos e Espécies." },
-        { id: 17, title: "Aula 17", content: "Controle Repressivo Judicial: Difuso e Concentrado." },
-        { id: "M2", title: "Aula 18: AVALIAÇÃO M2", content: "Foco em Processo Legislativo e Teoria Geral do Controle.", type: "highlight" },
-        { id: 19, title: "Aula 19", content: "Ações do Controle Concentrado (ADI, ADO, ADC, ADPF)." },
-        { id: 20, title: "Aula 20", content: "Revisão Final e Síntese do Curso." }
+        { id: 1, title: "", content: "Teoria Geral dos Direitos Fundamentais e Estrutura Normativa de Defesa." },
+        { id: 2, title: "", content: "A Eficácia dos Direitos Individuais e o Direito à Vida." },
+        { id: 3, title: "", content: "Liberdades do Pensamento e a Vedação à Tortura." },
+        { id: 4, title: "", content: "Privacidade, Inviolabilidade e Direitos de Associação." },
+        { id: 5, title: "", content: "Garantias Processuais e Judiciais." },
+        { id: 6, title: "", content: "Nacionalidade e Tratados Internacionais." },
+        { id: 7, title: "", content: "Direitos Políticos e Inelegibilidades." },
+        { id: 8, title: "", content: "Organização Político-Administrativa e Federalismo." },
+        { id: "M1", title: "", content: "Revisão e avaliação aprofundada dos tópicos das aulas 1 a 8.", type: "highlight" },
+        { id: 10, title: "", content: "Defesa do Estado e das Instituições Democráticas." },
+        { id: 11, title: "", content: "Organização dos Poderes e Funções Essenciais." },
+        { id: 12, title: "", content: "Processo Legislativo e Medidas Provisórias." },
+        { id: 13, title: "", content: "Tutela das Liberdades: Habeas Corpus e Habeas Data." },
+        { id: 14, title: "", content: "Mandado de Segurança (MS)." },
+        { id: 15, title: "", content: "Mandado de Injunção e Ação Popular." },
+        { id: 16, title: "", content: "Controle de Constitucionalidade: Conceitos e Espécies." },
+        { id: 17, title: "", content: "Controle Repressivo Judicial: Difuso e Concentrado." },
+        { id: "M2", title: "", content: "Foco em Processo Legislativo e Teoria Geral do Controle.", type: "highlight" },
+        { id: 19, title: "", content: "Ações do Controle Concentrado (ADI, ADO, ADC, ADPF)." },
+        { id: 20, title: "", content: "Revisão Final e Síntese do Curso." }
     ],
 
     getDidacticLessons: () => [
         {
-            aula: "Aula 01",
+            aula: "01",
             titulo: "Teoria Geral e Estrutura Normativa",
             conceitos: [
                 "<strong>Dupla Dimensão dos Direitos (Subjetiva e Objetiva):</strong> Superação da visão liberal clássica. Sob a ótica subjetiva, conferem ao indivíduo a prerrogativa de exigir comportamentos (ações/omissões) do Estado. Sob a ótica objetiva, funcionam como a base axiológica fundamental de todo o ordenamento jurídico, condicionando a interpretação de todas as normas infraconstitucionais.",
@@ -99,7 +99,7 @@ const CourseRepository = {
             tags: ["alexy", "dimensões", "ponderação", "bonavides", "regras e princípios", "subjetiva", "objetiva"]
         },
         {
-            aula: "Aula 02",
+            aula: "02",
             titulo: "Eficácia e Direito à Vida",
             conceitos: [
                 "<strong>Eficácia Horizontal (Drittwirkung):</strong> Os direitos fundamentais irradiam efeitos diretos nas relações entre particulares, especialmente onde há assimetria de poder. <em>Leading Case:</em> <strong>RE 201.819 (União Brasileira de Compositores)</strong>, onde o STF garantiu o devido processo legal na exclusão de um associado de entidade privada.",
@@ -110,7 +110,7 @@ const CourseRepository = {
             tags: ["vida", "aborto", "anencefalia", "eficacia horizontal", "drittwirkung", "bioética", "adi 3510"]
         },
         {
-            aula: "Aula 03",
+            aula: "03",
             titulo: "Liberdades e Vedação à Tortura",
             conceitos: [
                 "<strong>Tortura (Direito Absoluto):</strong> A Constituição de 1988 repudia a tortura de forma absoluta (Art. 5º, III). Diferente de outros direitos que admitem ponderação, a vedação à tortura e ao tratamento desumano reflete a dignidade da pessoa humana como 'superprincípio', sendo crime inafiançável e insuscetível de graça ou anistia.",
@@ -121,7 +121,7 @@ const CourseRepository = {
             tags: ["tortura", "ellwanger", "hate speech", "racismo", "homofobia", "consciência", "ado 26"]
         },
         {
-            aula: "Aula 04",
+            aula: "04",
             titulo: "Privacidade, Sigilo e Reunião",
             conceitos: [
                 "<strong>Inviolabilidade Domiciliar:</strong> O conceito de 'casa' é amplo (quartos de hotel ocupados, trailers, escritórios fechados). A entrada sem consentimento é restrita: a qualquer hora em caso de flagrante, desastre ou socorro; durante o dia, apenas com ordem judicial. A invasão policial sem justa causa prévia anula as provas (STJ).",
@@ -131,7 +131,7 @@ const CourseRepository = {
             tags: ["domicilio", "sigilo bancário", "marcha da maconha", "reuniao", "privacidade", "adpf 187"]
         },
         {
-            aula: "Aula 05",
+            aula: "05",
             titulo: "Garantias Processuais e Prisão",
             conceitos: [
                 "<strong>Presunção de Inocência (ADCs 43, 44 e 54):</strong> Em 2019, o STF reverteu jurisprudência anterior e assentou a constitucionalidade do art. 283 do CPP, definindo que a execução da pena exige o <strong>trânsito em julgado</strong> da condenação, vedando a execução provisória automática após 2ª instância (ressalvadas as prisões cautelares).",
@@ -141,7 +141,7 @@ const CourseRepository = {
             tags: ["prisão", "segunda instancia", "juri", "provas", "arvore envenenada", "inocencia", "adc 43"]
         },
         {
-            aula: "Aula 06",
+            aula: "06",
             titulo: "Nacionalidade e Tratados",
             conceitos: [
                 "<strong>Hierarquia dos Tratados (EC 45/2004):</strong> <br>1. Tratados de Direitos Humanos aprovados pelo rito de emenda (3/5, 2 turnos) = <strong>Status Constitucional</strong> (Ex: Convenção Pessoas com Deficiência). <br>2. Tratados de DH aprovados pelo rito comum = <strong>Status Supralegal</strong> (acima das leis, abaixo da CF). <br>3. Outros Tratados = Status de Lei Ordinária.",
@@ -151,7 +151,7 @@ const CourseRepository = {
             tags: ["nacionalidade", "tratados", "supralegalidade", "claudia hoerig", "pacto san jose", "ec 45"]
         },
         {
-            aula: "Aula 07",
+            aula: "07",
             titulo: "Direitos Políticos e Ficha Limpa",
             conceitos: [
                 "<strong>Lei da Ficha Limpa (LC 135/2010):</strong> Declarada constitucional pelo STF (ADCs 29 e 30). Instituiu hipóteses de inelegibilidade para proteger a moralidade administrativa. O STF definiu que a inelegibilidade não constitui pena, mas um <em>requisito de idoneidade</em> (status jurídico), podendo ser aplicada a fatos anteriores à lei (retrospectividade) sem violar a irretroatividade penal.",
@@ -161,7 +161,7 @@ const CourseRepository = {
             tags: ["voto", "ficha limpa", "inelegibilidade", "políticos", "moralidade", "adc 29"]
         },
         {
-            aula: "Aula 08",
+            aula: "08",
             titulo: "Federalismo e Crise Sanitária",
             conceitos: [
                 "<strong>Federalismo de Cooperação:</strong> O Brasil adota a repartição constitucional de competências: <br>• Privativa da União (Art. 22 - Interesse Geral). <br>• Comum (Art. 23 - Administrativa). <br>• Concorrente (Art. 24 - Legislativa: União fixa normas gerais, Estados suplementam).",
@@ -170,7 +170,7 @@ const CourseRepository = {
             tags: ["federalismo", "covid", "competencia", "adi 6341", "autonomia", "cooperação"]
         },
         {
-            aula: "Aula 09",
+            aula: "09",
             titulo: "Avaliação Institucional M1",
             conceitos: [
                 "<strong>Escopo Dogmático:</strong> Revisão aprofundada das Aulas 1 a 8.",
@@ -181,7 +181,7 @@ const CourseRepository = {
             highlight: true
         },
         {
-            aula: "Aula 10",
+            aula: "10",
             titulo: "Defesa do Estado (Art. 142)",
             conceitos: [
                 "<strong>Mito do Poder Moderador:</strong> O Art. 142 estabelece que as Forças Armadas são instituições de Estado, permanentes e regulares, sob autoridade suprema do Presidente. O STF (ADPF 289 e ADI 6457) rechaçou categoricamente a tese de que militares poderiam atuar como 'poder moderador' ou arbitrar conflitos entre os Três Poderes. Tal interpretação é golpista e inconstitucional.",
@@ -190,7 +190,7 @@ const CourseRepository = {
             tags: ["art 142", "golpe", "intervenção", "estado de sitio", "forças armadas", "adpf 289"]
         },
         {
-            aula: "Aula 11",
+            aula: "11",
             titulo: "Poderes e Ativismo Judicial",
             conceitos: [
                 "<strong>Checks and Balances:</strong> O sistema de freios e contrapesos garante que os poderes sejam independentes e harmônicos. A separação não é estanque; a Constituição prevê interferências legítimas (Ex: Veto presidencial, aprovação de Ministros pelo Senado, controle de constitucionalidade pelo Judiciário).",
@@ -199,7 +199,7 @@ const CourseRepository = {
             tags: ["ativismo", "poderes", "checks and balances", "lenio streck", "judicialização"]
         },
         {
-            aula: "Aula 12",
+            aula: "12",
             titulo: "Legislativo e Imunidades",
             conceitos: [
                 "<strong>Medidas Provisórias (Art. 62):</strong> Editadas pelo PR em caso de relevância e urgência. Têm força de lei imediata. O STF (MS 27.931) decidiu que o trancamento de pauta após 45 dias atinge apenas leis ordinárias passíveis de MP, não bloqueando PECs ou Leis Complementares.",
@@ -209,7 +209,7 @@ const CourseRepository = {
             tags: ["mp", "imunidade", "daniel silveira", "legislativo", "medida provisoria"]
         },
         {
-            aula: "Aula 13",
+            aula: "13",
             titulo: "Habeas Corpus e Habeas Data",
             conceitos: [
                 "<strong>Habeas Corpus (HC):</strong> Remédio heroico para tutela da liberdade de locomoção. O STF tem admitido o <strong>HC Coletivo</strong> (Ex: HC 143.641), concedendo prisão domiciliar para todas as presas gestantes ou mães de crianças, superando a análise puramente individual. Aplica-se a 'jurisprudência defensiva' para não conhecer de HCs substitutivos de recurso ordinário.",
@@ -218,7 +218,7 @@ const CourseRepository = {
             tags: ["hc", "hd", "coletivo", "gestantes", "locomoção", "dados", "súmula 2"]
         },
         {
-            aula: "Aula 14",
+            aula: "14",
             titulo: "Mandado de Segurança (MS)",
             conceitos: [
                 "<strong>Direito Líquido e Certo:</strong> Conceito processual. É o direito que pode ser comprovado de plano, documentalmente, no momento da impetração. O MS não admite dilação probatória (produção de provas como perícias ou testemunhas). O prazo decadencial é de 120 dias da ciência do ato.",
@@ -227,7 +227,7 @@ const CourseRepository = {
             tags: ["ms", "mandado de segurança", "liquido e certo", "coletivo", "substituição processual"]
         },
         {
-            aula: "Aula 15",
+            aula: "15",
             titulo: "MI e Ação Popular",
             conceitos: [
                 "<strong>Mandado de Injunção (MI):</strong> Combate a falta de norma regulamentadora que inviabiliza o exercício de direitos constitucionais (síndrome da inefetividade). O STF evoluiu da posição não-concretista para a <strong>Posição Concretista Geral</strong> (MI 6709 e MI 721), conferindo efeitos <em>erga omnes</em> à decisão e aplicando a lei de greve do setor privado aos servidores públicos.",
@@ -236,7 +236,7 @@ const CourseRepository = {
             tags: ["mi", "ação popular", "concretista", "greve", "omissão", "lesividade"]
         },
         {
-            aula: "Aula 16",
+            aula: "16",
             titulo: "Controle de Constitucionalidade: Teoria",
             conceitos: [
                 "<strong>Supremacia e Parametricidade:</strong> Todo o ordenamento deve compatibilidade vertical com a Constituição (Pirâmide de Kelsen). O parâmetro de controle é o 'Bloco de Constitucionalidade', que inclui a CF/88, os Princípios Implícitos e os Tratados de Direitos Humanos com status de Emenda.",
@@ -246,7 +246,7 @@ const CourseRepository = {
             tags: ["controle", "preventivo", "repressivo", "bloco", "kelsen", "supremacia"]
         },
         {
-            aula: "Aula 17",
+            aula: "17",
             titulo: "Controle Difuso e Reserva de Plenário",
             conceitos: [
                 "<strong>Controle Difuso (Incidenter Tantum):</strong> Realizado por qualquer juiz ou tribunal no caso concreto. A declaração de inconstitucionalidade é a fundamentação para resolver a lide. Efeitos tradicionais: <em>inter partes</em> e <em>ex tunc</em>.",
@@ -256,7 +256,7 @@ const CourseRepository = {
             tags: ["difuso", "plenario", "abstrativização", "gilmar mendes", "mutação", "sv 10"]
         },
         {
-            aula: "Aula 18",
+            aula: "18",
             titulo: "Avaliação Institucional M2",
             conceitos: [
                 "<strong>Escopo Dogmático:</strong> Revisão profunda das Aulas 10 a 17.",
@@ -267,7 +267,7 @@ const CourseRepository = {
             highlight: true
         },
         {
-            aula: "Aula 19",
+            aula: "19",
             titulo: "Controle Concentrado (Ações)",
             conceitos: [
                 "<strong>ADI (Ação Direta de Inconstitucionalidade):</strong> Ação genérica contra lei ou ato normativo federal/estadual. Legitimados do Art. 103 (3 Pessoas, 3 Mesas, 3 Entidades). Não admite desistência.",
@@ -278,7 +278,7 @@ const CourseRepository = {
             tags: ["adi", "adpf", "ado", "adc", "eci", "estado de coisas", "concentrado"]
         },
         {
-            aula: "Aula 20",
+            aula: "20",
             titulo: "Síntese Final e Hermenêutica",
             conceitos: [
                 "<strong>Sociedade Aberta dos Intérpretes (Peter Häberle):</strong> A hermenêutica constitucional contemporânea rompe com o monopólio judicial da interpretação. A Constituição é um projeto aberto que se legitima através da participação plural da sociedade (Amicus Curiae, Audiências Públicas).",
